@@ -12,7 +12,7 @@ m2cv delivers a streamlined pipeline from job description to tailored PDF resume
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Executors** - Core infrastructure, subprocess handling, embedded assets
+- [x] **Phase 1: Foundation & Executors** - Core infrastructure, subprocess handling, embedded assets
 - [ ] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
 - [ ] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
 - [ ] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
@@ -33,9 +33,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project scaffolding, config repository, embedded assets
-- [ ] 01-02-PLAN.md — ClaudeExecutor and NPMExecutor (TDD)
-- [ ] 01-03-PLAN.md — CLI skeleton with cobra and preflight checks
+- [x] 01-01-PLAN.md — Project scaffolding, config repository, embedded assets
+- [x] 01-02-PLAN.md — ClaudeExecutor and NPMExecutor (TDD)
+- [x] 01-03-PLAN.md — CLI skeleton with cobra and preflight checks
 
 ### Phase 2: Project Initialization
 **Goal**: Users can initialize m2cv projects with config, themes, and dependencies
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Executors | 0/3 | Ready | - |
+| 1. Foundation & Executors | 3/3 | ✓ Complete | 2026-02-03 |
 | 2. Project Initialization | 0/TBD | Not started | - |
 | 3. Application Workflow | 0/TBD | Not started | - |
 | 4. Content Tailoring | 0/TBD | Not started | - |
