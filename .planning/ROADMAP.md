@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
 - [x] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
 - [x] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
-- [ ] **Phase 5: Export Pipeline** - JSON Resume conversion, schema validation, themed PDF export
+- [x] **Phase 5: Export Pipeline** - JSON Resume conversion, schema validation, themed PDF export
 
 ## Phase Details
 
@@ -98,8 +98,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Generator service layer (JSON extractor, schema validator, PDF exporter)
-- [ ] 05-02-PLAN.md — Generate command with theme/model flags and integration
+- [x] 05-01-PLAN.md — Generator service layer (JSON extractor, schema validator, PDF exporter)
+- [x] 05-02-PLAN.md — Generate command with theme/model flags and integration
 
 ## Progress
 
@@ -112,4 +112,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Project Initialization | 2/2 | Complete | 2026-02-03 |
 | 3. Application Workflow | 3/3 | Complete | 2026-02-03 |
 | 4. Content Tailoring | 2/2 | Complete | 2026-02-03 |
-| 5. Export Pipeline | 0/2 | Not started | - |
+| 5. Export Pipeline | 2/2 | Complete | 2026-02-03 |

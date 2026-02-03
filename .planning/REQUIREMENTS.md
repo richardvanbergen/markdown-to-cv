@@ -7,31 +7,31 @@
 
 ### Project Setup
 
-- [ ] **INIT-01**: `m2cv init` creates `m2cv.yml` config file with base CV path, default theme, installed themes list, and default Claude model
-- [ ] **INIT-02**: `m2cv init` installs `resumed` and user-selected themes via npm in the project directory
-- [ ] **INIT-03**: `m2cv init` presents available themes interactively for user selection
-- [ ] **INIT-04**: Preflight checks verify `claude` CLI is in PATH before any AI command runs
-- [ ] **INIT-05**: Preflight checks verify `resumed` is installed before generate runs
+- [x] **INIT-01**: `m2cv init` creates `m2cv.yml` config file with base CV path, default theme, installed themes list, and default Claude model
+- [x] **INIT-02**: `m2cv init` installs `resumed` and user-selected themes via npm in the project directory
+- [x] **INIT-03**: `m2cv init` presents available themes interactively for user selection
+- [x] **INIT-04**: Preflight checks verify `claude` CLI is in PATH before any AI command runs
+- [x] **INIT-05**: Preflight checks verify `resumed` is installed before generate runs
 
 ### Application Workflow
 
-- [ ] **WORK-01**: `m2cv apply <job-desc-file>` creates an application folder under `applications/`
-- [ ] **WORK-02**: `m2cv apply` auto-names the folder by shelling out to Claude to extract company + role from the job description
-- [ ] **WORK-03**: `m2cv apply` copies the job description into the application folder
-- [ ] **WORK-04**: `m2cv optimize` writes versioned output files (optimized-cv-1.md, optimized-cv-2.md, etc.)
-- [ ] **WORK-05**: Base CV path comes from `m2cv.yml`, overridable with a CLI flag
+- [x] **WORK-01**: `m2cv apply <job-desc-file>` creates an application folder under `applications/`
+- [x] **WORK-02**: `m2cv apply` auto-names the folder by shelling out to Claude to extract company + role from the job description
+- [x] **WORK-03**: `m2cv apply` copies the job description into the application folder
+- [x] **WORK-04**: `m2cv optimize` writes versioned output files (optimized-cv-1.md, optimized-cv-2.md, etc.)
+- [x] **WORK-05**: Base CV path comes from `m2cv.yml`, overridable with a CLI flag
 
 ### Content Optimization
 
-- [ ] **OPT-01**: `m2cv optimize <application-name>` reads base CV + job description, shells out to `claude -p` to produce a tailored CV markdown
-- [ ] **OPT-02**: `m2cv optimize` supports `-m` flag to select Claude model
+- [x] **OPT-01**: `m2cv optimize <application-name>` reads base CV + job description, shells out to `claude -p` to produce a tailored CV markdown
+- [x] **OPT-02**: `m2cv optimize` supports `-m` flag to select Claude model
 
 ### Export Pipeline
 
-- [ ] **GEN-01**: `m2cv generate <application-name>` converts latest optimized markdown to JSON Resume format via `claude -p`
-- [ ] **GEN-02**: `m2cv generate` validates output JSON against JSON Resume schema before export
-- [ ] **GEN-03**: `m2cv generate` exports PDF via `resumed` with the configured or specified theme
-- [ ] **GEN-04**: `m2cv generate` supports `--theme <name>` flag to select JSON Resume theme
+- [x] **GEN-01**: `m2cv generate <application-name>` converts latest optimized markdown to JSON Resume format via `claude -p`
+- [x] **GEN-02**: `m2cv generate` validates output JSON against JSON Resume schema before export
+- [x] **GEN-03**: `m2cv generate` exports PDF via `resumed` with the configured or specified theme
+- [x] **GEN-04**: `m2cv generate` supports `--theme <name>` flag to select JSON Resume theme
 
 ## v2 Requirements
 
@@ -75,10 +75,10 @@
 | WORK-05 | Phase 1 | Complete |
 | OPT-01 | Phase 4 | Complete |
 | OPT-02 | Phase 4 | Complete |
-| GEN-01 | Phase 5 | Pending |
-| GEN-02 | Phase 5 | Pending |
-| GEN-03 | Phase 5 | Pending |
-| GEN-04 | Phase 5 | Pending |
+| GEN-01 | Phase 5 | Complete |
+| GEN-02 | Phase 5 | Complete |
+| GEN-03 | Phase 5 | Complete |
+| GEN-04 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 16 total
@@ -87,4 +87,4 @@
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-03 after Phase 4 completion*
+*Last updated: 2026-02-03 after Phase 5 completion — MILESTONE v1 COMPLETE*
