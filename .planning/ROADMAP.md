@@ -36,6 +36,7 @@ Plans:
 - [x] 01-01-PLAN.md — Project scaffolding, config repository, embedded assets
 - [x] 01-02-PLAN.md — ClaudeExecutor and NPMExecutor (TDD)
 - [x] 01-03-PLAN.md — CLI skeleton with cobra and preflight checks
+- [x] 01-04-PLAN.md — Gap closure: Makefile + test isolation
 
 ### Phase 2: Project Initialization
 **Goal**: Users can initialize m2cv projects with config, themes, and dependencies
@@ -102,7 +103,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Executors | 3/3 | ✓ Complete | 2026-02-03 |
+| 1. Foundation & Executors | 4/4 | ✓ Complete | 2026-02-03 |
 | 2. Project Initialization | 0/TBD | Not started | - |
 | 3. Application Workflow | 0/TBD | Not started | - |
 | 4. Content Tailoring | 0/TBD | Not started | - |
