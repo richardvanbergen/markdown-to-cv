@@ -95,10 +95,11 @@ Plans:
   3. JSON output validates against JSON Resume schema before PDF generation
   4. PDF exports via resumed with configured or specified theme
   5. User can override theme with --theme flag
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD (determined during planning)
+- [ ] 05-01-PLAN.md — Generator service layer (JSON extractor, schema validator, PDF exporter)
+- [ ] 05-02-PLAN.md — Generate command with theme/model flags and integration
 
 ## Progress
 
@@ -111,4 +112,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Project Initialization | 2/2 | Complete | 2026-02-03 |
 | 3. Application Workflow | 3/3 | Complete | 2026-02-03 |
 | 4. Content Tailoring | 2/2 | Complete | 2026-02-03 |
-| 5. Export Pipeline | 0/TBD | Not started | - |
+| 5. Export Pipeline | 0/2 | Not started | - |
