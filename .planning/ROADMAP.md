@@ -13,7 +13,7 @@ m2cv delivers a streamlined pipeline from job description to tailored PDF resume
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Executors** - Core infrastructure, subprocess handling, embedded assets
-- [ ] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
+- [x] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
 - [x] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
 - [ ] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
 - [ ] **Phase 5: Export Pipeline** - JSON Resume conversion, schema validation, themed PDF export
@@ -47,10 +47,11 @@ Plans:
   2. `resumed` package is installed in project via npm
   3. User can select from available JSON Resume themes interactively during init
   4. Selected theme is installed via npm and recorded in m2cv.yml
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD (determined during planning)
+- [x] 02-01-PLAN.md — Init service and theme selector (foundation)
+- [x] 02-02-PLAN.md — Init command with cobra integration
 
 ### Phase 3: Application Workflow
 **Goal**: Users can create organized job applications with AI-extracted folder names
@@ -106,7 +107,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Executors | 4/4 | Complete | 2026-02-03 |
-| 2. Project Initialization | 0/TBD | Not started | - |
+| 2. Project Initialization | 2/2 | Complete | 2026-02-03 |
 | 3. Application Workflow | 3/3 | Complete | 2026-02-03 |
 | 4. Content Tailoring | 0/TBD | Not started | - |
 | 5. Export Pipeline | 0/TBD | Not started | - |

@@ -19,19 +19,20 @@ Progress: [██████░░░░] 60%
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 4.3 min
-- Total execution time: 30 min
+- Total plans completed: 9
+- Average duration: 4.2 min
+- Total execution time: 38 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 4 | 20 min | 5 min |
+| 2. Project Init | 2 | 8 min | 4 min |
 | 3. Application | 3 | 10 min | 3.3 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-04 (5 min), 03-01 (3 min), 03-02 (4 min), 03-03 (3 min)
+- Last 5 plans: 02-01 (6 min), 02-02 (2 min), 03-01 (3 min), 03-02 (4 min), 03-03 (3 min)
 - Trend: Stable (consistent fast execution)
 
 *Updated after each plan completion*
@@ -59,6 +60,13 @@ Recent decisions affecting current work:
 - CheckResumed is command-specific (only generate needs it)
 - FindOptions with SkipSystemPaths for test isolation
 - WithFindOptions NPMOption for passing FindOptions to executor
+- huh v0.8.0 for interactive theme selection (latest stable)
+- 8 curated themes: even, stackoverflow, elegant, actual, class, flat, kendall, macchiato
+- ErrAlreadyInitialized sentinel error for clear error handling
+- Service layer with constructor injection pattern
+- Init uses local --base-cv flag separate from root's persistent flag
+- Default Claude model set to claude-sonnet-4-20250514 for new projects
+- Force flag removes existing m2cv.yml before calling service
 - Repository interface for filesystem operations (matches config pattern)
 - Max filename length 50 chars with word-boundary truncation
 - Mock executor in test file for Claude integration testing

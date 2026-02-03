@@ -34,9 +34,9 @@ themed PDF using resumed.
 The pipeline: Job Description + Base CV -> Claude AI -> JSON Resume -> PDF`,
 		SilenceUsage: true,
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
-			// Skip preflight for non-functional commands
+			// Skip preflight for non-functional commands and init (which only needs npm)
 			switch cmd.Name() {
-			case "version", "help", "completion":
+			case "version", "help", "completion", "init":
 				return nil
 			}
 			return preflight.CheckClaude()
@@ -56,6 +56,7 @@ func Execute() {
 
 	// Add subcommands
 	rootCmd.AddCommand(newVersionCommand())
+	rootCmd.AddCommand(newInitCommand())
 	rootCmd.AddCommand(newApplyCommand())
 
 	if err := rootCmd.Execute(); err != nil {
