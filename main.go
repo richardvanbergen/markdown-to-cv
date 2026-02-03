@@ -1,12 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"os"
+	"github.com/richq/m2cv/cmd"
 )
 
 func main() {
-	// CLI wiring happens in Plan 03
-	fmt.Println("m2cv - Markdown to CV")
-	os.Exit(0)
+	cmd.Execute()
 }
