@@ -56,6 +56,7 @@ func Execute() {
 
 	// Add subcommands
 	rootCmd.AddCommand(newVersionCommand())
+	rootCmd.AddCommand(newApplyCommand())
 
 	if err := rootCmd.Execute(); err != nil {
 		os.Exit(1)
