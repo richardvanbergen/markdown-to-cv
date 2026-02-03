@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Given a job description, produce a tailored, professional PDF resume in one pipeline
-**Current focus:** Phase 4 - Content Tailoring complete, ready for Phase 5
+**Current focus:** Phase 5 - Export Pipeline in progress
 
 ## Current Position
 
-Phase: 4 of 5 (Content Tailoring)
-Plan: 2 of 2 in current phase (all plans completed)
-Status: Phase 4 complete, ready for Phase 5
-Last activity: 2026-02-03 - Completed 04-02-PLAN.md (optimize tests)
+Phase: 5 of 5 (Export Pipeline)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-03 - Completed 05-01-PLAN.md (generator service layer)
 
-Progress: [████████░░] 80%
+Progress: [████████░░] 85%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 4.3 min
-- Total execution time: 50 min
+- Total plans completed: 12
+- Average duration: 4.4 min
+- Total execution time: 55 min
 
 **By Phase:**
 
@@ -31,9 +31,10 @@ Progress: [████████░░] 80%
 | 2. Project Init | 2 | 8 min | 4 min |
 | 3. Application | 3 | 10 min | 3.3 min |
 | 4. Content Tailoring | 2 | 12 min | 6 min |
+| 5. Export Pipeline | 1 | 5 min | 5 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-01 (3 min), 03-02 (4 min), 03-03 (3 min), 04-01 (8 min), 04-02 (4 min)
+- Last 5 plans: 03-02 (4 min), 03-03 (3 min), 04-01 (8 min), 04-02 (4 min), 05-01 (5 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -80,6 +81,9 @@ Recent decisions affecting current work:
 - Job description found via filepath.Glob for *.txt files
 - Avoid t.Parallel() on tests that call NewRootCommand (writes to global vars)
 - Use t.Skip() when test conditions can't be met on host system
+- First '{' to last '}' for JSON boundaries (robust for LLM output)
+- jsonschema v6 for draft-07 support (JSON Resume schema version)
+- cmd.Start() + cmd.Wait() pattern for subprocess (consistent with existing executors)
 
 ### Pending Todos
 
@@ -91,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-03T08:32:15Z
-Stopped at: Completed 04-02-PLAN.md (optimize tests)
+Last session: 2026-02-03T08:59:01Z
+Stopped at: Completed 05-01-PLAN.md (generator service layer)
 Resume file: None
