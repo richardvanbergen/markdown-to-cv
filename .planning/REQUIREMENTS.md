@@ -73,8 +73,8 @@
 | WORK-03 | Phase 3 | Complete |
 | WORK-04 | Phase 3 | Complete |
 | WORK-05 | Phase 1 | Complete |
-| OPT-01 | Phase 4 | Pending |
-| OPT-02 | Phase 4 | Pending |
+| OPT-01 | Phase 4 | Complete |
+| OPT-02 | Phase 4 | Complete |
 | GEN-01 | Phase 5 | Pending |
 | GEN-02 | Phase 5 | Pending |
 | GEN-03 | Phase 5 | Pending |
@@ -87,4 +87,4 @@
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-03 after Phase 2 completion*
+*Last updated: 2026-02-03 after Phase 4 completion*
