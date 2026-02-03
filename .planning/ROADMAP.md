@@ -30,10 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Config repository can load m2cv.yml from current directory or parent directories
   4. Embedded prompts and JSON Resume schema compile into binary
   5. Preflight checks detect missing claude or resumed before commands fail
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD (determined during planning)
+- [ ] 01-01-PLAN.md — Project scaffolding, config repository, embedded assets
+- [ ] 01-02-PLAN.md — ClaudeExecutor and NPMExecutor (TDD)
+- [ ] 01-03-PLAN.md — CLI skeleton with cobra and preflight checks
 
 ### Phase 2: Project Initialization
 **Goal**: Users can initialize m2cv projects with config, themes, and dependencies
@@ -100,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Executors | 0/TBD | Not started | - |
+| 1. Foundation & Executors | 0/3 | Ready | - |
 | 2. Project Initialization | 0/TBD | Not started | - |
 | 3. Application Workflow | 0/TBD | Not started | - |
 | 4. Content Tailoring | 0/TBD | Not started | - |
