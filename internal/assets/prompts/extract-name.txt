@@ -1,0 +1,3 @@
+Extract company name and role from the following job description. Return ONLY a folder name in company-role format (lowercase, hyphens). No explanation.
+
+{{.JobDescription}}

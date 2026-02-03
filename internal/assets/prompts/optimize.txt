@@ -1,0 +1,7 @@
+Tailor the following CV for the given job description. Maintain the same markdown format with YAML frontmatter. Emphasize relevant experience and skills.
+
+Base CV:
+{{.BaseCV}}
+
+Job Description:
+{{.JobDescription}}

@@ -1,0 +1,7 @@
+Tailor the following CV for the given job description. Optimize for ATS (Applicant Tracking Systems): use standard section headings, include keywords from the job description, avoid tables/columns/graphics. Maintain markdown format with YAML frontmatter.
+
+Base CV:
+{{.BaseCV}}
+
+Job Description:
+{{.JobDescription}}

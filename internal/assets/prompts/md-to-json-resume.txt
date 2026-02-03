@@ -1,0 +1,4 @@
+Convert the following markdown CV (with YAML frontmatter) to valid JSON Resume format. Return ONLY the JSON object, no markdown fences or explanation.
+
+CV:
+{{.CV}}
