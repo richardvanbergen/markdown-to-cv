@@ -26,7 +26,8 @@ type NPMExecutor interface {
 
 // npmExecutor is the default implementation of NPMExecutor.
 type npmExecutor struct {
-	npmPath string
+	npmPath     string
+	findOptions *FindOptions
 }
 
 // NPMOption modifies the NPMExecutor construction.
@@ -36,6 +37,14 @@ type NPMOption func(*npmExecutor)
 func WithNPMPath(path string) NPMOption {
 	return func(e *npmExecutor) {
 		e.npmPath = path
+	}
+}
+
+// WithFindOptions sets options for FindNodeExecutable when locating npm.
+// Useful for testing to ensure isolation from host system binaries.
+func WithFindOptions(opts *FindOptions) NPMOption {
+	return func(e *npmExecutor) {
+		e.findOptions = opts
 	}
 }
 
@@ -51,7 +60,7 @@ func NewNPMExecutor(opts ...NPMOption) (NPMExecutor, error) {
 
 	// If no custom path, find npm using FindNodeExecutable
 	if e.npmPath == "" {
-		path, err := FindNodeExecutable("npm")
+		path, err := FindNodeExecutableWithOptions("npm", e.findOptions)
 		if err != nil {
 			return nil, fmt.Errorf("could not find npm: %w", err)
 		}

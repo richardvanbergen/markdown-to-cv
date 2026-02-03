@@ -273,7 +273,9 @@ func TestNPMExecutor_NotFound(t *testing.T) {
 	os.Setenv("PATH", "")
 	defer os.Setenv("PATH", origPath)
 
-	_, err := NewNPMExecutor()
+	// Use WithFindOptions to skip system paths for test isolation
+	// This prevents the test from finding system-installed npm in /usr/local/bin etc.
+	_, err := NewNPMExecutor(WithFindOptions(&FindOptions{SkipSystemPaths: true}))
 	if err == nil {
 		t.Fatal("expected error when npm not found")
 	}

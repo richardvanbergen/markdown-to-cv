@@ -115,7 +115,9 @@ func TestFindNodeExecutable_NotFound(t *testing.T) {
 	os.Setenv("PATH", "")
 	defer os.Setenv("PATH", origPath)
 
-	_, err := FindNodeExecutable("npm")
+	// Use FindNodeExecutableWithOptions with SkipSystemPaths to ensure test isolation
+	// This prevents the test from finding system-installed npm in /usr/local/bin etc.
+	_, err := FindNodeExecutableWithOptions("npm", &FindOptions{SkipSystemPaths: true})
 	if err == nil {
 		t.Fatal("expected error when executable not found")
 	}
