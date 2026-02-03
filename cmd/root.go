@@ -58,6 +58,7 @@ func Execute() {
 	rootCmd.AddCommand(newVersionCommand())
 	rootCmd.AddCommand(newInitCommand())
 	rootCmd.AddCommand(newApplyCommand())
+	rootCmd.AddCommand(newOptimizeCommand())
 
 	if err := rootCmd.Execute(); err != nil {
 		os.Exit(1)
