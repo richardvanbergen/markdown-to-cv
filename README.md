@@ -29,7 +29,7 @@ go build -o m2cv .
 m2cv init
 
 # 2. Create an application folder from a job description
-m2cv apply job-posting.txt
+m2cv apply "$(pbpaste)" acme-software-engineer
 
 # 3. Tailor your CV for that specific role
 m2cv optimize acme-software-engineer
@@ -62,21 +62,27 @@ m2cv init --force
 
 ### `m2cv apply`
 
-Create a job application folder with an AI-extracted name from the job description. The folder is created under `applications/` and the job description is copied into it.
+Create a job application folder from a job description. The folder is created under `applications/` and the job description is saved into it.
 
 ```bash
-# Auto-name via Claude
-m2cv apply job-posting.txt
+# Content input (default) - paste from clipboard
+m2cv apply "$(pbpaste)" acme-software-engineer
 
-# Manual folder name
-m2cv apply --name acme-corp-engineer job.txt
+# Direct content
+m2cv apply "Job posting text here..." acme-job
+
+# Stdin input
+pbpaste | m2cv apply - acme-engineer
+
+# File input
+m2cv apply --file job-posting.txt acme-engineer
 
 # Custom applications directory
-m2cv apply --dir my-apps job.txt
+m2cv apply --dir my-apps "$(pbpaste)" acme-job
 ```
 
 **Flags:**
-- `--name`, `-n` — Override folder name (skip Claude extraction)
+- `--file`, `-f` — Treat first argument as file path (default: content)
 - `--dir`, `-d` — Applications directory (default: `applications`)
 
 ### `m2cv optimize`
@@ -238,7 +244,7 @@ my-job-search/
 1. Write your base CV in markdown format (once)
 2. Initialize project: `m2cv init`
 3. For each job application:
-   - Create application: `m2cv apply job-posting.txt`
+   - Create application: `m2cv apply "$(pbpaste)" <app-name>`
    - Tailor CV: `m2cv optimize <app-name>`
    - Review and edit the optimized CV in your editor
    - Re-optimize if needed (creates new version)
