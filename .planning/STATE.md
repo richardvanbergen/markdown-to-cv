@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Given a job description, produce a tailored, professional PDF resume in one pipeline
-**Current focus:** Phase 1 - Foundation & Executors (COMPLETE)
+**Current focus:** Phase 2 - Project Initialization (COMPLETE)
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation & Executors) - Gap closure complete
-Plan: 4 of 4 in current phase (gap closure plan completed)
-Status: Phase 1 fully complete with gap closure, ready for Phase 2
-Last activity: 2026-02-03 - Completed 01-04-PLAN.md (gap closure)
+Phase: 2 of 5 (Project Initialization) - COMPLETE
+Plan: 2 of 2 in current phase
+Status: Phase 2 verified and complete, ready for Phase 3
+Last activity: 2026-02-03 - Completed Phase 2 execution
 
-Progress: [██░░░░░░░░] 20%
+Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
+- Total plans completed: 6
 - Average duration: 5 min
-- Total execution time: 20 min
+- Total execution time: 28 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 4 | 20 min | 5 min |
+| 2. Project Init | 2 | 8 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (5 min), 01-02 (7 min), 01-03 (3 min), 01-04 (5 min)
-- Trend: Stable (consistent 5 min average)
+- Last 5 plans: 01-03 (3 min), 01-04 (5 min), 02-01 (6 min), 02-02 (2 min)
+- Trend: Stable (consistent 4-5 min average)
 
 *Updated after each plan completion*
 
@@ -58,6 +59,13 @@ Recent decisions affecting current work:
 - CheckResumed is command-specific (only generate needs it)
 - FindOptions with SkipSystemPaths for test isolation
 - WithFindOptions NPMOption for passing FindOptions to executor
+- huh v0.8.0 for interactive theme selection (latest stable)
+- 8 curated themes: even, stackoverflow, elegant, actual, class, flat, kendall, macchiato
+- ErrAlreadyInitialized sentinel error for clear error handling
+- Service layer with constructor injection pattern
+- Init uses local --base-cv flag separate from root's persistent flag
+- Default Claude model set to claude-sonnet-4-20250514 for new projects
+- Force flag removes existing m2cv.yml before calling service
 
 ### Pending Todos
 
@@ -69,6 +77,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-03T06:08:23Z
-Stopped at: Completed 01-04-PLAN.md (gap closure complete)
+Last session: 2026-02-03
+Stopped at: Completed Phase 2 execution
 Resume file: None
