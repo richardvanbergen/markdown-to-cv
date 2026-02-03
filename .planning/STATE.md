@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Given a job description, produce a tailored, professional PDF resume in one pipeline
-**Current focus:** Phase 5 - Export Pipeline in progress
+**Current focus:** Phase 5 - Export Pipeline COMPLETE
 
 ## Current Position
 
 Phase: 5 of 5 (Export Pipeline)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-02-03 - Completed 05-01-PLAN.md (generator service layer)
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-02-03 - Completed 05-02-PLAN.md (generate command)
 
-Progress: [████████░░] 85%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 4.4 min
-- Total execution time: 55 min
+- Total plans completed: 13
+- Average duration: 4.6 min
+- Total execution time: 62 min
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [████████░░] 85%
 | 2. Project Init | 2 | 8 min | 4 min |
 | 3. Application | 3 | 10 min | 3.3 min |
 | 4. Content Tailoring | 2 | 12 min | 6 min |
-| 5. Export Pipeline | 1 | 5 min | 5 min |
+| 5. Export Pipeline | 2 | 12 min | 6 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-02 (4 min), 03-03 (3 min), 04-01 (8 min), 04-02 (4 min), 05-01 (5 min)
+- Last 5 plans: 03-03 (3 min), 04-01 (8 min), 04-02 (4 min), 05-01 (5 min), 05-02 (7 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -84,6 +84,10 @@ Recent decisions affecting current work:
 - First '{' to last '}' for JSON boundaries (robust for LLM output)
 - jsonschema v6 for draft-07 support (JSON Resume schema version)
 - cmd.Start() + cmd.Wait() pattern for subprocess (consistent with existing executors)
+- Generate has command-specific PreRunE for CheckResumed (not in root PersistentPreRunE)
+- Fallback to 'even' theme if neither flag nor config specifies theme
+- Write resume.json intermediate output for debugging/troubleshooting
+- Tests must disable both root PersistentPreRunE and generate PreRunE for isolation
 
 ### Pending Todos
 
@@ -95,6 +99,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-03T08:59:01Z
-Stopped at: Completed 05-01-PLAN.md (generator service layer)
+Last session: 2026-02-03T09:09:12Z
+Stopped at: Completed 05-02-PLAN.md (generate command) - PROJECT COMPLETE
 Resume file: None
