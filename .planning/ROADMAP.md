@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Executors** - Core infrastructure, subprocess handling, embedded assets
 - [ ] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
-- [ ] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
+- [x] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
 - [ ] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
 - [ ] **Phase 5: Export Pipeline** - JSON Resume conversion, schema validation, themed PDF export
 
@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Config repository can load m2cv.yml from current directory or parent directories
   4. Embedded prompts and JSON Resume schema compile into binary
   5. Preflight checks detect missing claude or resumed before commands fail
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
 - [x] 01-01-PLAN.md — Project scaffolding, config repository, embedded assets
@@ -61,10 +61,12 @@ Plans:
   2. Folder name is auto-generated from job description (company-role format) via Claude
   3. Job description file is copied into the application folder
   4. Application folder structure supports versioned CV files (optimized-cv-N.md pattern)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD (determined during planning)
+- [x] 03-01-PLAN.md — Filesystem operations and folder name extraction
+- [x] 03-02-PLAN.md — Apply command implementation
+- [x] 03-03-PLAN.md — Versioning utilities for optimized CV output
 
 ### Phase 4: Content Tailoring
 **Goal**: Users can tailor CVs to job descriptions with AI optimization and version management
@@ -103,8 +105,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Executors | 4/4 | ✓ Complete | 2026-02-03 |
+| 1. Foundation & Executors | 4/4 | Complete | 2026-02-03 |
 | 2. Project Initialization | 0/TBD | Not started | - |
-| 3. Application Workflow | 0/TBD | Not started | - |
+| 3. Application Workflow | 3/3 | Complete | 2026-02-03 |
 | 4. Content Tailoring | 0/TBD | Not started | - |
 | 5. Export Pipeline | 0/TBD | Not started | - |

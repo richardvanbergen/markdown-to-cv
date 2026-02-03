@@ -68,10 +68,10 @@
 | INIT-03 | Phase 2 | Pending |
 | INIT-04 | Phase 1 | Pending |
 | INIT-05 | Phase 1 | Pending |
-| WORK-01 | Phase 3 | Pending |
-| WORK-02 | Phase 3 | Pending |
-| WORK-03 | Phase 3 | Pending |
-| WORK-04 | Phase 3 | Pending |
+| WORK-01 | Phase 3 | Complete |
+| WORK-02 | Phase 3 | Complete |
+| WORK-03 | Phase 3 | Complete |
+| WORK-04 | Phase 3 | Complete |
 | WORK-05 | Phase 1 | Pending |
 | OPT-01 | Phase 4 | Pending |
 | OPT-02 | Phase 4 | Pending |
