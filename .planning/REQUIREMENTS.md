@@ -63,28 +63,28 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INIT-01 | | Pending |
-| INIT-02 | | Pending |
-| INIT-03 | | Pending |
-| INIT-04 | | Pending |
-| INIT-05 | | Pending |
-| WORK-01 | | Pending |
-| WORK-02 | | Pending |
-| WORK-03 | | Pending |
-| WORK-04 | | Pending |
-| WORK-05 | | Pending |
-| OPT-01 | | Pending |
-| OPT-02 | | Pending |
-| GEN-01 | | Pending |
-| GEN-02 | | Pending |
-| GEN-03 | | Pending |
-| GEN-04 | | Pending |
+| INIT-01 | Phase 2 | Pending |
+| INIT-02 | Phase 2 | Pending |
+| INIT-03 | Phase 2 | Pending |
+| INIT-04 | Phase 1 | Pending |
+| INIT-05 | Phase 1 | Pending |
+| WORK-01 | Phase 3 | Pending |
+| WORK-02 | Phase 3 | Pending |
+| WORK-03 | Phase 3 | Pending |
+| WORK-04 | Phase 3 | Pending |
+| WORK-05 | Phase 1 | Pending |
+| OPT-01 | Phase 4 | Pending |
+| OPT-02 | Phase 4 | Pending |
+| GEN-01 | Phase 5 | Pending |
+| GEN-02 | Phase 5 | Pending |
+| GEN-03 | Phase 5 | Pending |
+| GEN-04 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16
+- Mapped to phases: 16
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-03 after initial definition*
+*Last updated: 2026-02-03 after roadmap creation*
