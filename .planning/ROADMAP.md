@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Executors** - Core infrastructure, subprocess handling, embedded assets
 - [x] **Phase 2: Project Initialization** - Project setup with config, npm integration, theme selection
 - [x] **Phase 3: Application Workflow** - Job application creation with AI-powered folder naming
-- [ ] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
+- [x] **Phase 4: Content Tailoring** - AI-powered CV optimization with versioning and ATS mode
 - [ ] **Phase 5: Export Pipeline** - JSON Resume conversion, schema validation, themed PDF export
 
 ## Phase Details
@@ -79,10 +79,11 @@ Plans:
   3. Claude receives appropriate prompt (standard or ATS mode) with CV + job description context
   4. Output writes to optimized-cv-N.md with auto-incrementing version numbers
   5. User can override Claude model with -m flag
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD (determined during planning)
+- [x] 04-01-PLAN.md — Optimize command implementation with config/file reading
+- [x] 04-02-PLAN.md — Integration tests and wiring verification
 
 ### Phase 5: Export Pipeline
 **Goal**: Users can convert tailored CVs to professional themed PDFs via JSON Resume
@@ -102,12 +103,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Executors | 4/4 | Complete | 2026-02-03 |
 | 2. Project Initialization | 2/2 | Complete | 2026-02-03 |
 | 3. Application Workflow | 3/3 | Complete | 2026-02-03 |
-| 4. Content Tailoring | 0/TBD | Not started | - |
+| 4. Content Tailoring | 2/2 | Complete | 2026-02-03 |
 | 5. Export Pipeline | 0/TBD | Not started | - |
