@@ -125,6 +125,10 @@ func (m *mockExecutor) Execute(ctx context.Context, prompt string, opts ...execu
 	return m.response, nil
 }
 
+func (m *mockExecutor) ExecuteInteractive(ctx context.Context, cfg executor.InteractiveConfig) error {
+	return nil
+}
+
 func TestExtractFolderName(t *testing.T) {
 	t.Parallel()
 
