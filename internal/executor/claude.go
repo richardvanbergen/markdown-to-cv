@@ -141,7 +141,7 @@ func (e *claudeExecutor) Execute(ctx context.Context, prompt string, opts ...Exe
 func (e *claudeExecutor) ExecuteInteractive(ctx context.Context, cfg InteractiveConfig) error {
 	args := []string{"--mcp-config", cfg.MCPConfigPath}
 	if cfg.Model != "" {
-		args = append(args, "-m", cfg.Model)
+		args = append(args, "--model", cfg.Model)
 	}
 	args = append(args, cfg.SystemPrompt)
 
