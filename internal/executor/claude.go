@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -15,6 +16,20 @@ type ClaudeExecutor interface {
 	// Execute runs claude with the given prompt and returns the result.
 	// Options can modify the command (e.g., WithModel, WithOutputFormat).
 	Execute(ctx context.Context, prompt string, opts ...ExecuteOption) (string, error)
+
+	// ExecuteInteractive runs claude in interactive mode with MCP server support.
+	// The terminal is passed through to claude for user interaction.
+	ExecuteInteractive(ctx context.Context, cfg InteractiveConfig) error
+}
+
+// InteractiveConfig holds configuration for interactive Claude execution.
+type InteractiveConfig struct {
+	// MCPConfigPath is the path to the MCP configuration JSON file
+	MCPConfigPath string
+	// SystemPrompt is the initial prompt to send to Claude
+	SystemPrompt string
+	// Model is the Claude model to use (may be empty for default)
+	Model string
 }
 
 // claudeExecutor is the default implementation of ClaudeExecutor.
@@ -119,4 +134,21 @@ func (e *claudeExecutor) Execute(ctx context.Context, prompt string, opts ...Exe
 	}
 
 	return stdout.String(), nil
+}
+
+// ExecuteInteractive runs claude in interactive mode with MCP server support.
+// The terminal is passed through to allow user interaction.
+func (e *claudeExecutor) ExecuteInteractive(ctx context.Context, cfg InteractiveConfig) error {
+	args := []string{"--mcp-config", cfg.MCPConfigPath}
+	if cfg.Model != "" {
+		args = append(args, "-m", cfg.Model)
+	}
+	args = append(args, cfg.SystemPrompt)
+
+	cmd := exec.CommandContext(ctx, e.claudePath, args...)
+	cmd.Stdin = os.Stdin
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	return cmd.Run()
 }
