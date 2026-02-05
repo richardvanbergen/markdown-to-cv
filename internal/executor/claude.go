@@ -88,7 +88,7 @@ func (e *claudeExecutor) Execute(ctx context.Context, prompt string, opts ...Exe
 	// Build command arguments
 	args := []string{"-p", "--output-format", cfg.outputFormat}
 	if cfg.model != "" {
-		args = append(args, "-m", cfg.model)
+		args = append(args, "--model", cfg.model)
 	}
 
 	// Create command with context for cancellation support
